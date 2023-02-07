@@ -3,6 +3,7 @@ import About from "@/components/About";
 import { useState } from "react";
 import NavBar from "@/components/NavBar";
 import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   const [visibleSection, setVisibleSection] = useState("");
@@ -22,6 +23,8 @@ export default function Home() {
       <About />
       <hr className="border-gray-300 rounded border-1 max-w-md mx-auto" />
       <Skills />
+      <hr className="border-gray-300 rounded border-1 max-w-md mx-auto" />
+      <Projects />
     </>
   );
 }
