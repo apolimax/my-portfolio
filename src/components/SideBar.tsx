@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Dispatch, SetStateAction } from "react";
 import { AiOutlineClose } from "react-icons/ai";
@@ -31,13 +30,7 @@ export default function SideBar({
         }
       >
         <div>
-          <div className="flex w-full items-center justify-between">
-            <Image
-              src="/assets/skills/aws.png"
-              alt="/"
-              width="50"
-              height="50"
-            />
+          <div className="flex w-full items-center justify-end">
             <div onClick={handleSideBar} className="p-3 cursor-pointer">
               <AiOutlineClose size={25} />
             </div>
@@ -73,9 +66,6 @@ export default function SideBar({
             >
               <li className="py-4 uppercase">Blog</li>
             </Link>
-            {/* <Link href="#skills">
-                <li className="py-4 uppercase">Skills</li>
-              </Link> */}
           </ul>
 
           <div className="flex items-center justify-center w-full sm:w-[80%]">
