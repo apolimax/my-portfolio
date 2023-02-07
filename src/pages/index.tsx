@@ -7,7 +7,7 @@ import Projects from "@/components/Projects";
 import { getPosts } from "@/api/gql";
 import Blog from "@/components/Blog";
 
-type Post = {
+export type Post = {
   title: string;
   brief: string;
   slug: string;
