@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import SideBar from "./SideBar";
 
 type NavBarProps = {
   visibleSection: string;
@@ -98,6 +99,12 @@ export default function NavBar({
           <AiOutlineMenu size={25} />
         </div>
       </div>
+
+      <SideBar
+        sideBar={sideBar}
+        handleSideBar={handleSideBar}
+        setSideBar={setSideBar}
+      />
     </div>
   );
 }
