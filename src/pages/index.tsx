@@ -4,8 +4,19 @@ import { useState } from "react";
 import NavBar from "@/components/NavBar";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
+import { getPosts } from "@/api/gql";
+import Blog from "@/components/Blog";
 
-export default function Home() {
+type Post = {
+  title: string;
+  brief: string;
+  slug: string;
+  _id: string;
+};
+
+export type Posts = { posts: Post[] };
+
+export default function Home({ posts }: Posts) {
   const [visibleSection, setVisibleSection] = useState("");
 
   return (
@@ -25,6 +36,18 @@ export default function Home() {
       <Skills />
       <hr className="border-gray-300 rounded border-1 max-w-md mx-auto" />
       <Projects />
+      <hr className="border-gray-300 rounded border-1 max-w-md mx-auto" />
+      <Blog posts={posts} />
     </>
   );
+}
+
+export async function getStaticProps() {
+  const { posts } = await getPosts();
+
+  return {
+    props: {
+      posts,
+    },
+  };
 }
