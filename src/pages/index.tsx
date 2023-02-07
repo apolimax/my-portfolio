@@ -6,6 +6,7 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import { getPosts } from "@/api/gql";
 import Blog from "@/components/Blog";
+import Footer from "@/components/Footer";
 
 export type Post = {
   title: string;
@@ -72,6 +73,7 @@ export default function Home({ posts }: Posts) {
       >
         &uarr;
       </button>
+      <Footer />
     </>
   );
 }
