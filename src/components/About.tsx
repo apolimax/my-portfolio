@@ -7,9 +7,9 @@ export default function About() {
   useEffect(() => {
     const jobTitle = document.querySelector("#job-title");
     const dream = document.querySelector("#dream");
-    const brazil = document.querySelector("#brazil");
     const react = document.querySelector("#react");
     const node = document.querySelector("#node");
+    const brazil = document.querySelector("#brazil");
     const hire = document.querySelector("#hire");
 
     const a1 = annotate(jobTitle as HTMLElement, {
@@ -21,17 +21,17 @@ export default function About() {
       color: "#b288ce",
       multiline: true,
     });
-    const a3 = annotate(brazil as HTMLElement, {
-      type: "highlight",
-      color: "#f9d44f",
-    });
-    const a4 = annotate(react as HTMLElement, {
+    const a3 = annotate(react as HTMLElement, {
       type: "underline",
       color: "#1e47a2",
     });
-    const a5 = annotate(node as HTMLElement, {
+    const a4 = annotate(node as HTMLElement, {
       type: "highlight",
       color: "#8aa589",
+    });
+    const a5 = annotate(brazil as HTMLElement, {
+      type: "highlight",
+      color: "#f9d44f",
     });
     const a6 = annotate(hire as HTMLElement, {
       type: "circle",
