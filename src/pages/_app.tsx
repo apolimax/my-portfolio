@@ -1,5 +1,5 @@
 import "@/styles/globals.css";
-import "react-tooltip/dist/react-tooltip.css";
+import "@/styles/TechItem.css";
 import type { AppProps } from "next/app";
 
 export default function App({ Component, pageProps }: AppProps) {

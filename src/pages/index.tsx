@@ -67,7 +67,7 @@ export default function Home({ posts }: Posts) {
         title="Go back to top"
         className={
           showGoTopButton
-            ? `fixed z-90 bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-lg bg-blue-700 text-white text-3xl font-bold`
+            ? "fixed z-90 bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-lg bg-blue-700 text-white text-3xl font-bold"
             : "hidden"
         }
       >
