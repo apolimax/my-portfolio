@@ -1,10 +1,9 @@
 import { Posts } from "@/pages";
-import Link from "next/link";
 import BlogItem from "./BlogItem";
 
 export default function Blog({ posts }: Posts) {
   return (
-    <div id="blog" className="max-w-[1200px] mx-auto px-2 py-16 min-h-full">
+    <div id="blog" className="max-w-[1200px] mx-auto px-2 py-16 min-h-screen">
       <h2 className="text-center tracking-widest text-blue-700 mb-8 font-poppins">
         Blog
       </h2>

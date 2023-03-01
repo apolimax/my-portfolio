@@ -74,10 +74,7 @@ const TECH_ITEMS_FAMILIAR = [
 
 export default function Skills() {
   return (
-    <div
-      id="skills"
-      className="max-w-[1240px] mx-auto flex flex-col justify-center px-2 py-16 min-h-screen"
-    >
+    <div id="skills" className="max-w-[1200px] mx-auto px-2 py-16 min-h-screen">
       <h2 className="text-center tracking-widest text-blue-700 mb-8 font-poppins">
         Tech Skills
       </h2>

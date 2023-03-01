@@ -18,7 +18,7 @@ export default function About() {
     });
     const a2 = annotate(dream as HTMLElement, {
       type: "highlight",
-      color: "#b288ce",
+      color: "#f9d44f",
       multiline: true,
     });
     const a3 = annotate(react as HTMLElement, {
@@ -26,7 +26,7 @@ export default function About() {
       color: "#1e47a2",
     });
     const a4 = annotate(node as HTMLElement, {
-      type: "highlight",
+      type: "underline",
       color: "#8aa589",
     });
     const a5 = annotate(brazil as HTMLElement, {
@@ -46,7 +46,7 @@ export default function About() {
 
   return (
     <div id="about" className="w-full h-screen text-center">
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
+      <div className="max-w-[1200px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div className="flex flex-col items-center">
           <h1 className="py-4 text-gray-700">
             {/* eslint-disable-next-line react/no-unescaped-entities */}
@@ -58,17 +58,12 @@ export default function About() {
           </h2>
           <p className="py-8 px-2 text-gray-600 md:max-w-[60%] text-justify text-xl tracking-widest md:leading-8">
             Former mechanical engineer, I switched careers in order to follow a{" "}
-            <span id="dream" className="text-white">
-              dream of building digital products
-            </span>{" "}
-            and touching thousands of people worldwide with my craft. I started
-            as a <span id="react">React developer</span> but worked my way to
-            learn backend development with{" "}
-            <span id="node" className="text-white">
-              Node.js
-            </span>{" "}
-            and its frameworks. Here I will share some of my side projects and
-            my writings. I am based in <span id="brazil">Brazil</span> and{" "}
+            <span id="dream">dream of building digital products</span> and
+            touching thousands of people worldwide with my craft. I started as a{" "}
+            <span id="react">React developer</span> but worked my way to learn
+            backend development with <span id="node">Node.js</span> and its
+            frameworks. Here I will share some of my side projects and my
+            writings. I am based in <span id="brazil">Brazil</span> and{" "}
             <span id="">looking for a remote developer job</span>. Will you{" "}
             <span id="hire">hire me ?</span>
           </p>

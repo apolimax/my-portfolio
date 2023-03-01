@@ -34,7 +34,7 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="max-w-[1200px] mx-auto flex flex-col justify-center px-2 py-16 min-h-screen"
+      className="max-w-[1200px] mx-auto px-2 py-16 min-h-screen"
     >
       <h2 className="text-center tracking-widest text-blue-700 mb-8 font-poppins">
         Projects
