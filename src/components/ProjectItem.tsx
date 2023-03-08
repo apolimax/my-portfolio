@@ -19,7 +19,7 @@ function ProjectItem({
   return (
     <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-sky-300 to-sky-400">
       <Image
-        className="rounded-xl group-hover:opacity-10"
+        className="rounded-xl group-hover:opacity-10 h-full object-cover"
         src={imageSrc}
         alt={alt}
         width={800}

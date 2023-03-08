@@ -3,6 +3,15 @@ import ProjectItem from "./ProjectItem";
 const PROJECTS = [
   {
     id: "1",
+    imageSrc: "/assets/tmdb.png",
+    alt: "TMDB Movies",
+    name: "TMDB Movies",
+    code: "https://github.com/apolimax/TheMovieBitNext",
+    live: "https://themoviebitbywill.vercel.app/",
+    tech: "Next.js, Typescript",
+  },
+  {
+    id: "2",
     imageSrc: "/assets/todomvc.png",
     alt: "Todo MVC App",
     name: "Todo List",
@@ -11,7 +20,7 @@ const PROJECTS = [
     tech: "React.js",
   },
   {
-    id: "2",
+    id: "3",
     imageSrc: "/assets/splitter.png",
     alt: "Splitter App",
     name: "Splitter",
@@ -20,7 +29,7 @@ const PROJECTS = [
     tech: "React.js",
   },
   {
-    id: "3",
+    id: "4",
     imageSrc: "/assets/pokedex.png",
     alt: "Pokedex App",
     name: "Pokedex",
