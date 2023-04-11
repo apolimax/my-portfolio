@@ -10,7 +10,7 @@ export default function About() {
     const react = document.querySelector("#react");
     const node = document.querySelector("#node");
     const brazil = document.querySelector("#brazil");
-    const hire = document.querySelector("#hire");
+    const challenges = document.querySelector("#challenges");
 
     const a1 = annotate(jobTitle as HTMLElement, {
       type: "highlight",
@@ -33,7 +33,7 @@ export default function About() {
       type: "highlight",
       color: "#f9d44f",
     });
-    const a6 = annotate(hire as HTMLElement, {
+    const a6 = annotate(challenges as HTMLElement, {
       type: "circle",
       color: "#f0524c",
       padding: 8,
@@ -64,8 +64,10 @@ export default function About() {
             backend development with <span id="node">Node.js</span> and its
             frameworks. Here I will share some of my side projects and my
             writings. I am based in <span id="brazil">Brazil</span> and{" "}
-            <span id="">looking for a remote developer job</span>. Will you{" "}
-            <span id="hire">hire me ?</span>
+            <span id="">
+              looking for a remote developer job that{" "}
+              <span id="challenges">challenges</span> me.
+            </span>
           </p>
           <div className="flex items-center justify-center gap-4">
             <Link

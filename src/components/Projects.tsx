@@ -28,15 +28,6 @@ const PROJECTS = [
     live: "https://tipwill-calculator.netlify.app/",
     tech: "React.js",
   },
-  {
-    id: "4",
-    imageSrc: "/assets/pokedex.png",
-    alt: "Pokedex App",
-    name: "Pokedex",
-    code: "https://github.com/apolimax/js-developer-pokedex",
-    live: "https://apolimax.github.io/js-developer-pokedex/",
-    tech: "HTML, CSS, Javascript",
-  },
 ];
 
 export default function Projects() {
